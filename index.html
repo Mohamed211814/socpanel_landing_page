@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> 
+    <title>4meida | fast and sheap smm</title>
+  </head>
+  <body>
+
+<!--///////////////// CSS STYLE //////////////////-->
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --primary-color: #fe5b3e;
+  --text-dark: #0f172a;
+  --text-light: #475569;
+  --extra-light: #f2f2f2;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --gradient: linear-gradient(to bottom, #fe5c3c, #fc8023);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* TESTIMONIALS STYLE */
+.testimonial-main { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	min-height: 50vh; 
+	padding: 0 35px;  
+} 
+
+.wrapper {
+	max-width: 1100px; 
+	width: 100%; 
+	position: relative; 
+
+} 
+
+.wrapper i { 
+	height: 50px; 
+	width: 50px; 
+	background:var(--gradient);
+  color: white;
+	text-align: center; 
+	line-height: 50px; 
+	border-radius: 50%; 
+	cursor: pointer; 
+	position: absolute;
+	top: 50%;
+  z-index: 100;
+	font-size: 1.25 rem; 
+	transform: translateY(-50%); 
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23); 
+
+} 
+
+.wrapper i:first-child { 
+	left: -22px; 
+
+} 
+
+.wrapper i:last-child { 
+	right: -22px; 
+
+} 
+
+.wrapper .carousel { 
+	display: grid; 
+	grid-auto-flow: column; 
+	grid-auto-columns: calc((100% / 3) - 12px);
+  margin-left: .7rem;
+	gap: 16px; 
+	overflow-x: auto; 
+	scroll-snap-type: x mandatory; 
+	scroll-behavior: smooth; 
+	scrollbar-width: 0; 
+} 
+
+.carousel::-webkit-scrollbar { 
+	display: none; 
+} 
+
+.carousel :where(.card, .img) { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+} 
+
+.carousel.dragging { 
+	scroll-snap-type: none; 
+	scroll-behavior: auto; 
+} 
+
+.carousel.no-transition { 
+	scroll-behavior: auto; 
+} 
+
+.carousel.dragging .card { 
+	cursor: grab; 
+	user-select: none;
+} 
+
+.carousel .card {
+  text-align: center;
+  padding: 0 .7rem;
+	scroll-snap-align: start; 
+	height: 230px; 
+	list-style: none; 
+  background: rgb(241, 240, 240);
+  border-radius: 8px; 
+	display: flex; 
+	cursor: pointer; 
+	width: 98%; 
+	padding-bottom: 15px; 
+	align-items: center; 
+	justify-content: center; 
+	flex-direction: column; 
+}
+
+.card .img img { 
+	width: 60px; 
+	height: 60px; 
+	object-fit: cover; 
+	border-radius: 50%; 
+	border: 4px solid #fff; 
+} 
+
+.card h2 { 
+	font-weight: 500; 
+	font-size: 1.2rem; 
+	margin: 5px 0 5px; 
+} 
+
+
+p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.stars-review{
+    width: 90px;
+}
+
+/* TESTIMONIALS 2 STYLE */
+.wrapper2 .carousel .card span i{
+  font-size: 2.1rem;
+  background-color:var(--text-dark);
+  padding: .6rem 1rem;
+  color: white;
+  border-radius: 1rem 2rem;
+}
+
+.wrapper2 .carousel .card{
+  background-color: rgb(250, 245, 235);
+}
+
+.wrapper2 .carousel .card span h2{
+  margin-top: .8rem;
+}
+
+
+@media screen and (max-width: 900px) { 
+	.wrapper .carousel { 
+		grid-auto-columns: calc((100% / 2) - 9px); 
+
+	}
+
+  .wrapper2 .carousel .card span i{
+  font-size: 1.6rem;
+  background-color:var(--text-dark);
+  padding: .3rem .6rem;
+  color: white;
+  border-radius: 1rem 2rem;
+}
+} 
+
+@media screen and (max-width: 600px) { 
+	.wrapper .carousel { 
+		grid-auto-columns: 100%; 
+	}
+
+  .payment{
+    font-size: 1rem;
+  }
+}
+
+.wrapper2 .carousel{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-column-gap: 1rem;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__subheader {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-light);
+  letter-spacing: 1px;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: #474fa0;
+  white-space: nowrap;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn a{
+    color: white;
+    background-color: #474fa0;
+    border: 1px solid black;
+}
+
+.btn:hover {
+  background-color: #3c4286;
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+.payment-section img{
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  position: relative;
+}
+
+header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  z-index: -1;
+}
+
+nav {
+  position: fixed;
+  isolation: isolate;
+  width: 100%;
+  z-index: 9;
+}
+
+.nav__header {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+
+.nav__logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.nav__menu__btn {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.nav__links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--primary-color);
+  transition: 0.5s;
+  z-index: -1;
+  transform: translateY(-100%);
+}
+
+.btns-u-p{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.nav__links.open {
+  transform: translateY(0);
+}
+
+.nav__links a {
+  font-weight: 700;
+  color: var(--white);
+}
+
+.nav__links .btn {
+  padding: 0;
+  background-color: transparent;
+}
+
+.nav__btns {
+  display: none;
+}
+
+.header__container {
+  display: grid;
+  gap: 2rem 0;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.header__container::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  background: var(--gradient);
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+  z-index: -1;
+}
+
+.header__content h1 {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 1.8rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 3.25rem;
+}
+
+.header__content h1::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1rem;
+  height: 4px;
+  width: 2rem;
+  background-color: var(--primary-color);
+}
+
+.header__content p {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.75rem;
+}
+
+.steps__container :is(.section__subheader, .section__header) {
+  text-align: center;
+}
+
+.steps__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.steps__card {
+  text-align: center;
+}
+
+.steps__card span {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 8px 14px;
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  border-radius: 5px;
+  background-color: var(--extra-light);
+  border: 4px solid var(--white);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.steps__card:hover span {
+  padding: 14px 21px;
+  background: var(--gradient);
+  color: var(--white);
+  border: none;
+}
+
+.steps__card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.steps__card p {
+  color: var(--text-light);
+  line-height: 1.75rem;
+}
+
+.service__container {
+  display: grid;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.service__list {
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.service__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.service__list li span {
+  padding: 12px 15px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  background-color: var(--extra-light);
+  border: 4px solid var(--white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service__list h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.service__list p {
+  color: var(--text-light);
+  line-height: 1.75rem;
+}
+
+.experience__container :is(.section__subheader, .section__header) {
+  text-align: center;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.experience__content {
+  max-width: 1024px;
+  margin-inline: auto;
+  margin-top: 4rem;
+  position: relative;
+  isolation: isolate;
+}
+
+.experience__content img {
+  max-width: 300px;
+  margin-inline: auto;
+  opacity: 0.5;
+}
+
+.experience__card {
+  position: absolute;
+  max-width: 200px;
+}
+
+.experience__card span {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 10px 13px;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  background-color: var(--extra-light);
+  border: 4px solid var(--white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.experience__card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.experience__card:nth-child(1) {
+  top: 5rem;
+  left: 1rem;
+}
+
+.experience__card:nth-child(2) {
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+.experience__card:nth-child(3) {
+  bottom: 5rem;
+  left: 1rem;
+}
+
+.experience__card:nth-child(4) {
+  top: 5rem;
+  right: 1rem;
+  text-align: right;
+}
+
+.experience__card:nth-child(5) {
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+.experience__card:nth-child(6) {
+  bottom: 5rem;
+  right: 1rem;
+  text-align: right;
+}
+
+.contact__container {
+  overflow: hidden;
+}
+
+.contact__grid {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 1rem;
+  background: var(--gradient);
+  border-radius: 1rem;
+}
+
+
+.contact__content .section__header {
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.contact__content p {
+  margin-bottom: 2rem;
+  color: var(--extra-light);
+  line-height: 1.75rem;
+}
+
+.contact__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact__links i{
+  color: rgb(0, 0, 0);
+  font-size: 1.8rem;
+}
+
+.footer__container {
+  display: grid;
+  gap: 4rem 2rem;
+  border-bottom: 1px solid var(--text-light);
+}
+
+.footer__col h4 {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.footer__links {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer__links a {
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.footer__links a:hover {
+  color: var(--primary-color);
+}
+
+.footer__bar {
+  padding-block: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer__bar h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.footer__bar p {
+  font-weight: 500;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__socials a {
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 1rem;
+  color: var(--text-dark);
+  border-radius: 100%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer__socials a:hover {
+  color: var(--white);
+  background: var(--gradient);
+}
+
+select{
+    padding: 5px 15px;
+    border-radius: 8px;
+    outline: none;
+}
+
+@media (width < 540px){
+  .nav__logo a img{
+    width: 110px;
+  }
+
+  .header__content h1{
+    margin-top: 3.2rem;
+  }
+
+  .payment-section img{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+  .hero__nav__btns{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero_btn_1, .hero_btn_2{
+    padding: .8rem 2.4rem;
+    font-weight: 700;
+  }
+
+  .wrapper2 .carousel{
+  display: grid;
+  grid-template-columns:repeat(1,1fr);
+  grid-row-gap: 1rem;
+}
+
+.header__image {
+    display: none;
+  }
+}
+
+@media (width > 541px) {
+  .nav__logo a img{
+    width: 150px;
+  }
+  
+
+  .payment-section img{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+  .hero__nav__btns{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero_btn_1, .hero_btn_2{
+    padding: 1rem 2.8rem;
+    font-weight: 700;
+  }
+
+  .steps__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wrapper2 .carousel{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-row-gap: 1rem;
+}
+}
+
+/*==================================== MEDIA 769PX =====================================*/
+
+@media (width < 769px){
+  .header__image img{
+    width: 400px;
+    margin: 0 auto;
+  }
+
+
+  .header__content h1{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .header__content p{
+    text-align: center;
+  }
+  
+  .steps__container h2{
+    font-size: 1.4rem;
+  }
+
+
+  .steps__container span i{
+    font-size: 1.1rem;
+  }
+
+  .service__image img{
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .service__content h2{
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .payment{
+    margin-top: 3rem;
+  }
+
+  .contact__grid h2{
+    font-size: 1.9rem;
+  }
+
+  .contact__grid i , span{
+    font-size: 1.1rem;
+  }
+
+  .contact__image{
+    width: 220px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+
+@media (width > 768px) {
+  header::before {
+    height: calc(100% - 4rem);
+  }
+
+  .payment-section img{
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+  .wrapper2 .carousel{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-column-gap: 1rem;
+}
+
+  nav {
+    position: static;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .nav__header {
+    flex: 1;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .nav__logo a img{
+    width: 200px;
+  }
+
+  .nav__menu__btn {
+    display: none;
+  }
+
+  .nav__links {
+    position: static;
+    padding: 0;
+    width: fit-content;
+    flex-direction: row;
+    background-color: transparent;
+    transform: none;
+  }
+
+  .nav__links a {
+    padding-block: 5px;
+    color: var(--text-dark);
+    border-bottom: 2px solid transparent;
+  }
+
+  .nav__links a:hover {
+    border-color: var(--primary-color);
+  }
+
+  .nav__links__btn {
+    display: none;
+  }
+
+  .nav__btns {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .nav__btns .btn__primary {
+    color: var(--text-dark);
+    background-color: transparent;
+  }
+
+  .hero__nav__btns{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .hero_btn_1, .hero_btn_2{
+    padding: 1.2rem 3.6rem;
+    font-weight: 700;
+  }
+
+  .header__container {
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+  }
+
+  .header__container::before {
+    right: 5rem;
+    width: calc(50% - 4rem);
+    height: 100%;
+  }
+
+  .header__image {
+    grid-column: 3/6;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .header__content {
+    grid-area: 1/1/2/3;
+  }
+
+  .steps__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .service__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .experience__content img {
+    opacity: 1;
+  }
+
+  .experience__card:nth-child(1) {
+    left: 5rem;
+  }
+
+  .experience__card:nth-child(3) {
+    left: 5rem;
+  }
+
+  .experience__card:nth-child(4) {
+    right: 5rem;
+  }
+
+  .experience__card:nth-child(6) {
+    right: 5rem;
+  }
+
+  .contact__grid {
+    margin-block: 4rem;
+    padding-inline: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .contact__image {
+    display: flex;
+    position: relative;
+    isolation: isolate;
+  }
+
+  .contact__image img {
+    position: absolute;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.2));
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer__bar {
+    flex-direction: row;
+  }
+
+  .footer__bar :is(h4, .footer__socials) {
+    flex: 1;
+  }
+
+  .footer__socials {
+    justify-content: flex-end;
+  }
+}
+</style>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="https://4media.store/"><img src="https://i.postimg.cc/wMYFWFdM/4me-removebg-preview.png" alt=""></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+          <div>
+            <select class="" name="" id="">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+            </select>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a id="services" href="/services">Services</a></li>
+          <li><a id="contact" href="/order">Fast Order</a></li>
+          <li class="nav__links__btn">
+            <a href="/reg"><button id="nav_signup_mobile" class="btn">Sign Up</button></a>
+          </li>
+          <li class="nav__links__btn">
+            <a href="/login"><button id="nav_signin_mobile" class="btn">Sign In</button></a>
+          </li>
+        </ul>
+        <div class="nav__btns">
+          <a href="/reg"><button id="nav_signup_desktop" class="btn btn__primary">Sign Up</button></a>
+          <a href="/login"><button id="nav_signin_desktop" class="btn btn__secondary">Sign In</button></a>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="https://i.postimg.cc/wMNZM79y/Social-Media-Marketing.png" alt="header" />
+        </div>
+        <div class="header__content">
+          <h1 id="h1_hero">All social media services in one place only Better ideas for faster growth</h1>
+          <p id="hero_para">
+            The cheapest and the fastest platform for all social media marketing services and increase followers engagement that serve customers from all over the world.
+          </p>
+          <div class="hero__nav__btns">
+            <a href="/reg"><button id="signup" class="btn hero_btn_1">Sign Up</button></a>
+            <a href="/login"><button id="signin" class="btn hero_btn_2">Sign In</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--===================== TESTIMOTIALS SECTION ======================-->
+    <section class="testimonial-main">
+      <div class="wrapper"> 
+          <i id="left" class="fa-solid fas fa-angle-left"></i> 
+          <ul class="carousel"> 
+              <li class="card">
+                <span style="display: flex; align-items: center; gap: 1rem;">
+                  <h2 style="color: #474fa0; font-weight:bold;">Instagram</h2>
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+                    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                </svg>
+                </span>
+                  <p id="instagram">Cheapest and high quality instagram services . Followers , Likes , Comments , Views ...</p>
+              </li> 
+
+              <li class="card">
+                <span style="display: flex; align-items: center; gap: 1rem;">
+                  <h2 style="color: #474fa0; font-weight:bold;">Facebook</h2>
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"></path>
+                </svg>
+                </span>
+                  <p id="facebook">Cheapest and high quality facebook services . Followers , Likes , Comments , Views , watching time , shares ...</p>
+              </li>
+
+              <li class="card">
+                <span style="display: flex; align-items: center; gap: 1rem;">
+                  <h2 style="color: #474fa0; font-weight:bold;">Tiktok</h2>
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                    <path d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"></path>
+                </svg>
+                </span>
+                <p id="tiktok">Cheapest and high quality tiktok services . Followers , Likes , Comments , Views ...</p> 
+              </li>
+
+              <li class="card">
+                <span style="display: flex; align-items: center; gap: 1rem;">
+                  <h2 style="color: #474fa0; font-weight:bold;">Youtube</h2>
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                    <path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+                    </svg>
+                </span>
+                <p id="youtube">Cheapest and high quality youtube services . Subscribers , Likes , Comments , Views , watching time , shares ...</p>
+              </li>
+
+              <li class="card">
+                <span style="display: flex; align-items: center; gap: 1rem;">
+                  <h2 style="color: #474fa0; font-weight:bold;">X twitter</h2>
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                    <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                    </svg>
+                </span>
+                <p id="twitter">Cheapest and high quality X services . Followers , Likes , Comments , Views ...</p>
+              </li> 
+
+              <li class="card"> 
+                  <span style="display: flex; align-items: center; gap: 1rem;">
+                    <h2 style="color: #474fa0; font-weight:bold;">Other Services</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 50 50">
+                    <path d="M 32.21875 2.0625 L 27.84375 3.78125 L 28.625 7.5625 C 28.320313 7.867188 27.996094 8.21875 27.65625 8.59375 L 23.90625 7.75 L 22.0625 12.0625 L 25.25 14.1875 C 25.214844 14.714844 25.214844 15.253906 25.25 15.78125 L 21.96875 17.78125 L 23.6875 22.15625 L 27.375 21.40625 C 27.707031 21.804688 28.070313 22.167969 28.46875 22.5 L 27.625 26.1875 L 31.96875 28.03125 L 34.09375 24.84375 C 34.625 24.878906 35.125 24.878906 35.65625 24.84375 L 37.6875 28.125 L 42.0625 26.40625 L 41.21875 22.40625 C 41.613281 22.078125 41.953125 21.703125 42.28125 21.3125 L 46.09375 22.28125 L 47.96875 17.90625 L 44.65625 15.875 C 44.6875 15.355469 44.6875 14.863281 44.65625 14.34375 L 47.9375 12.3125 L 46.21875 7.9375 L 42.40625 8.78125 C 42.078125 8.386719 41.707031 8.015625 41.3125 7.6875 L 42.15625 4 L 37.8125 2.15625 L 35.78125 5.34375 C 35.257813 5.292969 34.730469 5.265625 34.21875 5.3125 Z M 35 11 C 37.210938 11 39 12.789063 39 15 C 39 17.210938 37.210938 19 35 19 C 32.789063 19 31 17.210938 31 15 C 31 12.789063 32.789063 11 35 11 Z M 13.53125 20 L 12.90625 24 C 12.355469 24.175781 11.796875 24.425781 11.25 24.71875 L 7.90625 22.28125 L 4.40625 25.78125 L 6.71875 29.15625 C 6.441406 29.703125 6.222656 30.253906 6.03125 30.8125 L 2 31.5625 L 2 36.4375 L 6 37.15625 C 6.175781 37.710938 6.421875 38.292969 6.71875 38.84375 L 4.28125 42.09375 L 7.78125 45.59375 L 11.15625 43.28125 C 11.699219 43.558594 12.257813 43.777344 12.8125 43.96875 L 13.4375 48 L 18.34375 48 L 19.0625 44 C 19.621094 43.824219 20.199219 43.578125 20.75 43.28125 L 24.09375 45.71875 L 27.59375 42.21875 L 25.1875 38.84375 C 25.460938 38.300781 25.652344 37.742188 25.84375 37.1875 L 30 36.4375 L 30 31.53125 L 25.90625 30.90625 C 25.730469 30.355469 25.480469 29.792969 25.1875 29.25 L 27.59375 25.90625 L 24.125 22.28125 L 20.71875 24.71875 C 20.183594 24.445313 19.644531 24.222656 19.09375 24.03125 L 18.46875 20 Z M 16 30 C 18.199219 30 20 31.800781 20 34 C 20 36.199219 18.199219 38 16 38 C 13.800781 38 12 36.199219 12 34 C 12 31.800781 13.800781 30 16 30 Z"></path>
+                    </svg>
+                  </span>
+                  <p id="other_services">We also provide you most of the accounts and subscriptions and games and many more services.</p>
+              </li> 
+              
+          </ul> 
+          <i id="right" class="fa-solid fas fa-angle-right"></i>
+      </div>
+  </section>
+
+    <section class="section__container steps__container" id="rent">
+      <p id="best" class="section__subheader">Best SMM Service Provider</p>
+      <h2 id="steps" class="section__header">STEPS FOR ORDERING</h2>
+      <div class="steps__grid">
+        <div class="steps__card">
+          <span><i class="ri-user-fill"></i></span>
+          <h4 id="stp1">Sing up</h4>
+          <p id="stp11">
+            When you open the website first time , Create an account ( sign up )
+          </p>
+        </div>
+        <div class="steps__card">
+          <span><i class="ri-wallet-3-fill"></i></span>
+          <h4 id="stp2">Add funds</h4>
+          <p id="stp22">
+            Add funds to order without a problem
+          </p>
+        </div>
+        <div class="steps__card">
+          <span><i class="ri-service-fill"></i></span>
+          <h4 id="stp3">Choose your service</h4>
+          <p id="stp33">
+            Choose the service that you like and the quantity
+          </p>
+        </div>
+        <div class="steps__card">
+          <span><i class="ri-emotion-happy-fill"></i></span>
+          <h4 id="stp4">Congratulations</h4>
+          <p id="stp44">
+            Congratulations after some moments you'll receive your order
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="btns-u-p">
+      <a href="/reg"><button id="signup11" class="btn hero_btn_1">Sign Up</button></a>
+      <a href="/login"><button id="signin11" class="btn hero_btn_2">Sign In</button></a>
+    </div>
+
+    <section class="section__container service__container" id="service">
+      <div class="service__image">
+        <img src="https://i.postimg.cc/3RGSjP1m/social-media-management.png" alt="service" />
+      </div>
+      <div class="service__content">
+        <h2 id="why_us" class="section__header">Why choose us?</h2>
+        <ul class="service__list">
+          <li>
+            <span><i class="ri-4k-fill"></i></span>
+            <div>
+              <h4 id="why1">High-Quality Followers and Engagement</h4>
+              <p id="why11">
+                We prioritize quality over quantity. Our strategies ensure that the followers and likes you gain are genuine, active, and relevant to your brand, providing real value to your social media profiles.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-speed-up-fill"></i></span>
+            <div>
+              <h4 id="why2">Fast Service</h4>
+              <p id="why22">
+                Our efficient processes ensure that you see results quickly , We deliver followers and engagement promptly to keep your social media momentum going.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-money-dollar-circle-fill"></i></span>
+            <div>
+              <h4 id="why3">Cheap Pricing</h4>
+              <p id="why33">
+                We offer various packages to suit different needs and budgets, making our services accessible to everyone.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-customer-service-fill"></i></span>
+            <div>
+              <h4 id="why4">Support 24/7</h4>
+              <p id="why44">
+                Our dedicated team is available 24/7 to assist you with any
+                questions.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="testimonial-main">
+      <div class="wrapper2"> 
+          <ul class="carousel"> 
+              <li class="card">
+                <span>
+                  <i class="ri-medal-fill"></i>
+                  <h2 id="tes1" style="color: #474fa0; font-weight:bold;">Awesome quality</h2>
+                </span>
+                  <p id="tes11">You will be satisfied with the quality of our services</p>
+              </li>
+
+              <li class="card">
+                <span>
+                  <i class="ri-menu-4-line"></i>
+                  <h2 id="tes2" style="color: #474fa0; font-weight:bold;">Many payment options</h2>
+                </span>
+                <p id="tes22">Good variety of payment options to choose from</p> 
+              </li>
+
+              <li class="card">
+                <span>
+                  <i class="ri-price-tag-2-fill"></i>
+                  <h2 id="tes3" style="color: #474fa0; font-weight:bold;">Unbelievable prices</h2>
+                </span>
+                <p id="tes33">Here you can purchase services at super cheap prices</p>
+              </li> 
+
+              <li class="card"> 
+                  <span>
+                    <i class="ri-speed-line"></i>
+                    <h2 id="tes4" style="color: #474fa0; font-weight:bold;">Very fast delivery</h2>
+                  </span>
+                  <p id="tes44">We provide quick order processing and quick results</p>
+              </li> 
+              
+          </ul> 
+      </div>
+  </section>
+
+
+    <div class="payment-section">
+      <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 1rem;">
+        <h2 id="payments" style="color: var(--text-dark);" class="payment">All payments methods are available</h2>
+        <a href="/reg"><button id="signup_p" class="btn hero_btn_1">Sign Up</button></a>
+      </div>
+      <img src="https://i.postimg.cc/0jLn9H2k/banks-removebg-preview.png" alt="">
+    </div>
+
+    <section class="section__container contact__container" id="contact">
+      <div class="contact__grid">
+        <div class="contact__content">
+          <h2 style="text-align: center;" id="contact_h2" class="section__header">How to contact us</h2>
+          <p style="text-align: center;" id="contact_p">
+            Multiple choices for contacting us or asking for help.
+          </p>
+          <div class="contact__links" style="font-size: 1.3rem;">
+            <a href="#"><i style="color: rgb(236, 21, 93);" class="ri-instagram-fill"></i></a>
+            <a href="#"><i style="color: blue;" class="ri-facebook-box-fill"></i></a>
+            <a href="#"><i style="color: rgb(14, 161, 14);" class="ri-whatsapp-fill"></i></a>
+            <a href="#"><i style="color: rgb(26, 155, 206);" class="ri-telegram-fill"></i></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="btns-u-p">
+      <a href="/reg"><button id="signup_re" class="btn hero_btn_1">Sign Up</button></a>
+      <a href="/login"><button id="signin_re" class="btn hero_btn_2">Sign In</button></a>
+    </div>
+
+    <section class="testimonial-main">
+      <div class="wrapper">
+        <h3 id="c_r" style="display: flex; justify-content: center; font-size: 2rem; color: var(--text-dark); margin-bottom: 1.5rem;">Customers reviews</h3>
+          <ul class="carousel"> 
+              <li class="card"> 
+                  <div class="img"><img src="https://i.postimg.cc/YSGPZP0d/download-1.jpg"alt="Jasmine C. Surrett" draggable="false"> </div> 
+                  <h2 style="color: green; font-weight:bold;">Khadija fj</h2>
+                  <img class="stars-review" src="https://i.postimg.cc/dDPpjjw5/360-F-356179107-Tmj-UM2-Mqf-O7ix2wd-Zg8-ONDXupq-WALSAf-removebg-preview.png" alt="">
+                  <p id="rev1">Thrilled with my follower boost! Quick and seamless process. Highly recommend!</p>
+              </li>
+              <li class="card"> 
+                  <div class="img"><img src="https://i.postimg.cc/SKYdCsyS/images-2.jpg"alt="Cindy T. Whitehill" draggable="false"> </div> 
+                  <h2 style="color: green; font-weight:bold;">najat janat</h2>
+                  <img class="stars-review" src="https://i.postimg.cc/dDPpjjw5/360-F-356179107-Tmj-UM2-Mqf-O7ix2wd-Zg8-ONDXupq-WALSAf-removebg-preview.png" alt="">
+                  <p id="rev2">Fantastic service! Instant increase in likes and comments. Great value</p>
+              </li>
+              <li class="card"> 
+                  <div class="img"><img src="https://i.postimg.cc/QdTKqWWy/images-3.jpg"alt="Aurelio S. Aguilar" draggable="false"> </div> 
+                  <h2 style="color: green; font-weight:bold;">Oussama abody</h2>
+                  <img class="stars-review" src="https://i.postimg.cc/dDPpjjw5/360-F-356179107-Tmj-UM2-Mqf-O7ix2wd-Zg8-ONDXupq-WALSAf-removebg-preview.png" alt="">
+                  <p id="rev3">Amazing results More engagement on my business account. Professional and efficient service.</p>
+              </li> 
+              
+          </ul> 
+      </div>
+  </section>
+
+    <footer>
+      <div class="section__container footer__bar">
+        <h4>4MEDIA</h4>
+        <p>Copyright © 2024 . All rights reserved.</p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-telegram-line"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      /* TESTIMONIALS */
+      document.addEventListener("DOMContentLoaded", function() { 
+	const carousel = document.querySelector(".carousel"); 
+	const arrowBtns = document.querySelectorAll(".wrapper i"); 
+	const wrapper = document.querySelector(".wrapper"); 
+
+	const firstCard = carousel.querySelector(".card"); 
+	const firstCardWidth = firstCard.offsetWidth; 
+
+	let isDragging = false, 
+		startX, 
+		startScrollLeft, 
+		timeoutId; 
+
+	const dragStart = (e) => { 
+		isDragging = true; 
+		carousel.classList.add("dragging"); 
+		startX = e.pageX; 
+		startScrollLeft = carousel.scrollLeft; 
+	}; 
+
+	const dragging = (e) => { 
+		if (!isDragging) return; 
+	
+		// Calculate the new scroll position 
+		const newScrollLeft = startScrollLeft - (e.pageX - startX); 
+	
+		// Check if the new scroll position exceeds 
+		// the carousel boundaries 
+		if (newScrollLeft <= 0 || newScrollLeft >= 
+			carousel.scrollWidth - carousel.offsetWidth) { 
+			
+			// If so, prevent further dragging 
+			isDragging = false; 
+			return; 
+		} 
+	
+		// Otherwise, update the scroll position of the carousel 
+		carousel.scrollLeft = newScrollLeft; 
+	}; 
+
+	const dragStop = () => { 
+		isDragging = false; 
+		carousel.classList.remove("dragging"); 
+	}; 
+
+	const autoPlay = () => { 
+	
+		// Return if window is smaller than 800 
+		if (window.innerWidth < 800) return; 
+		
+		// Calculate the total width of all cards 
+		const totalCardWidth = carousel.scrollWidth; 
+		
+		// Calculate the maximum scroll position 
+		const maxScrollLeft = totalCardWidth - carousel.offsetWidth; 
+		
+		// If the carousel is at the end, stop autoplay 
+		if (carousel.scrollLeft >= maxScrollLeft) return; 
+		
+		// Autoplay the carousel after every 2500ms 
+		timeoutId = setTimeout(() => 
+			carousel.scrollLeft += firstCardWidth, 2500); 
+	}; 
+
+	carousel.addEventListener("mousedown", dragStart); 
+	carousel.addEventListener("mousemove", dragging); 
+	document.addEventListener("mouseup", dragStop); 
+	wrapper.addEventListener("mouseenter", () => 
+		clearTimeout(timeoutId)); 
+	wrapper.addEventListener("mouseleave", autoPlay); 
+
+	// Add event listeners for the arrow buttons to 
+	// scroll the carousel left and right 
+	arrowBtns.forEach(btn => { 
+		btn.addEventListener("click", () => { 
+			carousel.scrollLeft += btn.id === "left" ? 
+				-firstCardWidth : firstCardWidth; 
+		}); 
+	}); 
+});
+
+
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+const menuBtnIcon = menuBtn.querySelector("i");
+
+menuBtn.addEventListener("click", (e) => {
+  navLinks.classList.toggle("open");
+
+  const isOpen = navLinks.classList.contains("open");
+  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+});
+
+navLinks.addEventListener("click", (e) => {
+  navLinks.classList.remove("open");
+  menuBtnIcon.setAttribute("class", "ri-menu-line");
+});
+
+const scrollRevealOption = {
+  distance: "50px",
+  origin: "bottom",
+  duration: 1000,
+};
+
+ScrollReveal().reveal(".header__image img", {
+  ...scrollRevealOption,
+  origin: "right",
+});
+ScrollReveal().reveal(".header__content h1", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".header__content p", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".header__links", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+
+ScrollReveal().reveal(".steps__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+ScrollReveal().reveal(".service__image img", {
+  ...scrollRevealOption,
+  origin: "left",
+});
+ScrollReveal().reveal(".service__content .section__subheader", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".service__content .section__header", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".service__list li", {
+  ...scrollRevealOption,
+  delay: 1500,
+  interval: 500,
+});
+
+ScrollReveal().reveal(".experience__card", {
+  duration: 1000,
+  interval: 500,
+});
+
+ScrollReveal().reveal(".contact__image img", {
+  ...scrollRevealOption,
+  origin: "right",
+});
+
+//ScrollReveal().reveal(".contact__content .section__header", {
+//  ...scrollRevealOption,
+//  delay: 500,
+//});
+//ScrollReveal().reveal(".contact__content p", {
+//  ...scrollRevealOption,
+//  delay: 1000,
+//});
+//ScrollReveal().reveal(".download__links", {
+//  ...scrollRevealOption,
+//  delay: 1500,
+//});
+
+
+     const translations = {
+        en : {
+            hero_title : "All social media services in one place only Better ideas for faster growth",
+            hero_paragraph : "The cheapest and the fastest platform for all social media marketing services and increase followers engagement that serve customers from all over the world.",
+            signup : "Sign Up",
+            signin : "Sign In",
+            services : "Services",
+            contact : "Fast Order",
+            instagram : "Cheapest and high quality instagram services . Followers , Likes , Comments , Views ...",
+            facebook : "Cheapest and high quality facebook services . Followers , Likes , Comments , Views , watching time , shares ...",
+            tiktok : "Cheapest and high quality tiktok services . Followers , Likes , Comments , Views ...",
+            youtube : "Cheapest and high quality youtube services . Subscribers , Likes , Comments , Views , watching time , shares ...",
+            twitter : "Cheapest and high quality X services . Followers , Likes , Comments , Views ...",
+            other_services : "We also provide you most of the accounts and subscriptions and games and many more services.",
+            best : "Best SMM Service Provider",
+            steps : "STEPS FOR ORDERING",
+
+            stp2 : "Add funds",
+            stp3 : "Choose your service",
+            stp4 : "Congratulations",
+
+            stp11 : "When you open the website first time , Create an account ( sign up )",
+            stp22 : "Add funds to order without a problem",
+            stp33 : "Choose the service that you like and the quantity",
+            stp44 : "Congratulations after some moments you'll receive your order",
+
+            why_us : "Why choose us?",
+
+            why1 : "High-Quality Followers and Engagement",
+            why2 : "Fast Service",
+            why3 : "Cheap Pricing",
+            why4 : "Support 24/7",
+
+            why11 : "We prioritize quality over quantity. Our strategies ensure that the followers and likes you gain are genuine, active, and relevant to your brand, providing real value to your social media profiles.",
+            why22 : "Our efficient processes ensure that you see results quickly , We deliver followers and engagement promptly to keep your social media momentum going.",
+            why33 : "We offer various packages to suit different needs and budgets, making our services accessible to everyone.",
+            why44 : "Our dedicated team is available 24/7 to assist you with any questions.",
+
+            tes1 : "Awesome quality",
+            tes2 : "Many payment options",
+            tes3 : "Unbelievable prices",
+            tes4 : "Very fast delivery",
+
+            tes11 : "You will be satisfied with the quality of our services",
+            tes22 : "Good variety of payment options to choose from",
+            tes33 : "Here you can purchase services at super cheap prices",
+            tes44 : "We provide quick order processing and quick results",
+
+            payments : "All payments methods are available",
+
+            contact_h2 : "How to contact us",
+            contact_p : "Multiple choices for contacting us or asking for help.",
+
+            c_r : "Customers reviews",
+
+            rev1 : "Thrilled with my follower boost! Quick and seamless process. Highly recommend!",
+            rev2 : "Fantastic service! Instant increase in likes and comments. Great value",
+            rev3 : "Amazing results More engagement on my business account. Professional and efficient service.",
+        },
+
+        ar : {
+            hero_title : "جميع خدمات التواصل الاجتماعي في مكان واحد فقط أفكار أفضل لنمو أسرع",
+            hero_paragraph : "أرخص وأسرع منصة لجميع خدمات التسويق عبر وسائل التواصل الاجتماعي وزيادة تفاعل المتابعين التي تخدم العملاء من جميع أنحاء العالم.",
+            signup : "تسجيل حساب",
+            signin : "تسجيل الدخول",
+            services : "الخدمات",
+            contact : "طلب دون تسجيل",
+            instagram : "خدمات انستجرام رخيصة وعالية الجودة . متابعين , لايكات , تعليقات , مشاهدات ...",
+            facebook : "أرخص وأعلى جودة خدمات الفيس بوك . متابعين , لايكات , تعليقات , مشاهدات , وقت مشاهدة , مشاركات ...",
+            tiktok : "خدمات تيك توك رخيصة وعالية الجودة. متابعون، إعجابات، تعليقات، مشاهدات ...",
+            youtube : "أرخص خدمات اليوتيوب وأعلى جودة . مشتركين , لايكات , تعليقات , مشاهدات , وقت مشاهدة , مشاركات ...",
+            twitter : "أرخص وأعلى جودة خدمات X . متابعين , إعجابات , تعليقات , مشاهدات ...",
+            other_services : "ونقدم لك أيضًا معظم الحسابات والاشتراكات والألعاب والكثير من الخدمات.",
+            best : "أفضل مزود خدمة SMM",
+            steps : "خطوات الطلب",
+
+            stp2 : "إضافة الأموال",
+            stp3 : "اختر خدمتك",
+            stp4 : "مبروك",
+
+            stp11 : "عند فتح الموقع لأول مرة، قم بإنشاء حساب (تسجيل)",
+            stp22 : "أضف الأموال إلى الطلب دون مشكلة",
+            stp33 : "اختر الخدمة التي تعجبك والكمية",
+            stp44 : "مبروك بعد لحظات سوف تتلقى طلبك",
+
+            why_us : "لماذا تختارنا؟",
+
+            why1 : "متابعون وتفاعل عالي الجودة",
+            why2 : "خدمة سريعة",
+            why3 : "أسعار رخيصة",
+            why4 : "دعم 24/7",
+
+            why11 : "نحن نعطي الأولوية للجودة على الكمية. تضمن استراتيجياتنا أن يكون المتابعون والإعجابات التي تحصل عليها حقيقية ونشطة وذات صلة بعلامتك التجارية، مما يوفر قيمة حقيقية لملفاتك الشخصية على وسائل التواصل الاجتماعي.",
+            why22 : "تضمن عملياتنا الفعالة رؤية النتائج بسرعة، ونوفر المتابعين والتفاعل على الفور للحفاظ على زخم وسائل التواصل الاجتماعي الخاصة بك.",
+            why33 : "نحن نقدم عروضًا متنوعة لتناسب احتياجات وميزانيات مختلفة، مما يجعل خدماتنا في متناول الجميع.",
+            why44 : "فريقنا المتخصص متاح على مدار الساعة طوال أيام الأسبوع لمساعدتك في أي استفسار.",
+
+            tes1 : "جودة رائعة",
+            tes2 : "خيارات الدفع متعددة",
+            tes3 : "أسعار لا تصدق",
+            tes4 : "تسليم سريع جدًا",
+
+            tes11 : "سوف تكون راضيا عن جودة خدماتنا",
+            tes22 : "مجموعة متنوعة من خيارات الدفع للاختيار من بينها",
+            tes33 : "هنا يمكنك شراء الخدمات بأسعار رخيصة جدًا",
+            tes44 : "نحن نقدم معالجة سريعة للطلبات ونتائج سريعة",
+
+            payments : "جميع طرق الدفع متاحة",
+
+            contact_h2 : "كيفية تتواصل معنا",
+            contact_p : "خيارات متعددة للتواصل معنا أو طلب المساعدة.",
+
+            c_r : "آراء العملاء",
+
+            rev1 : "أنا سعيد للغاية بزيادة عدد المتابعين لدي! العملية سريعة وسلسة. أوصي بها بشدة!",
+            rev2 : "خدمة رائعة! زيادة فورية في الإعجابات والتعليقات. قيمة رائعة",
+            rev3 :"نتائج مذهلة مزيد من التفاعل على حسابي التجاري. خدمة احترافية وفعالة.",
+        }
+     }
+
+     const languageSelect = document.querySelector("select")
+
+     let hero_title = document.getElementById("h1_hero")
+     let hero_para = document.getElementById("hero_para")
+     let signup_hero = document.getElementById("signup")
+     let signin_hero = document.getElementById("signin")
+     let nav_signup_mobile = document.getElementById("nav_signup_mobile")
+     let nav_signin_mobile = document.getElementById("nav_signin_mobile")
+     let nav_signup_desktop = document.getElementById("nav_signup_desktop")
+     let nav_signin_desktop = document.getElementById("nav_signin_desktop")
+     let services = document.getElementById("services")
+     let contact = document.getElementById("contact")
+     let instagram = document.getElementById("instagram")
+     let facebook = document.getElementById("facebook")
+     let tiktok = document.getElementById("tiktok")
+     let youtube = document.getElementById("youtube")
+     let twitter= document.getElementById("twitter")
+     let other_services = document.getElementById("other_services")
+     let best = document.getElementById("best")
+     let steps = document.getElementById("steps")
+
+     let stp1 = document.getElementById("stp1")
+     let stp2 = document.getElementById("stp2")
+     let stp3 = document.getElementById("stp3")
+     let stp4 = document.getElementById("stp4")
+
+     let stp11 = document.getElementById("stp11")
+     let stp22 = document.getElementById("stp22")
+     let stp33 = document.getElementById("stp33")
+     let stp44 = document.getElementById("stp44")
+
+     let signup11 = document.getElementById("signup11")
+     let signin11 = document.getElementById("signin11")
+
+     let why_us = document.getElementById("why_us")
+
+     let why1 = document.getElementById("why1")
+     let why2 = document.getElementById("why2")
+     let why3 = document.getElementById("why3")
+     let why4 = document.getElementById("why4")
+
+     let why11 = document.getElementById("why11")
+     let why22 = document.getElementById("why22")
+     let why33 = document.getElementById("why33")
+     let why44 = document.getElementById("why44")
+
+     let tes1 = document.getElementById("tes1")
+     let tes2 = document.getElementById("tes2")
+     let tes3 = document.getElementById("tes3")
+     let tes4 = document.getElementById("tes4")
+
+     let tes11 = document.getElementById("tes11")
+     let tes22 = document.getElementById("tes22")
+     let tes33 = document.getElementById("tes33")
+     let tes44 = document.getElementById("tes44")
+
+     let payments = document.getElementById("payments")
+
+     let signup_p = document.getElementById("signup_p")
+
+     let contact_h2 = document.getElementById("contact_h2")
+     let contact_p = document.getElementById("contact_p")
+
+     let signup_re = document.getElementById("signup_re")
+     let signin_re = document.getElementById("signin_re")
+
+     let c_r = document.getElementById("c_r")
+
+     let rev1 = document.getElementById("rev1")
+     let rev2 = document.getElementById("rev2")
+     let rev3 = document.getElementById("rev3")
+
+     
+
+     languageSelect.addEventListener('change' , (event) => {
+        setLanguage(event.target.value)
+     })
+
+     const setLanguage = (language) => {
+        if(language == "ar"){
+            hero_title.innerText = translations.ar.hero_title;
+            hero_para.innerText = translations.ar.hero_paragraph;
+            signup_hero.innerText = translations.ar.signup;
+            signin_hero.innerText = translations.ar.signin;
+            nav_signup_mobile.innerText = translations.ar.signup;
+            nav_signin_mobile.innerText = translations.ar.signin
+            nav_signup_desktop.innerText = translations.ar.signup
+            nav_signin_desktop.innerText = translations.ar.signup
+            services.innerText = translations.ar.services
+            contact.innerText = translations.ar.contact
+            instagram.innerText = translations.ar.instagram
+            facebook.innerText = translations.ar.facebook
+            tiktok.innerText = translations.ar.tiktok
+            youtube.innerText = translations.ar.youtube
+            twitter.innerText = translations.ar.twitter
+            other_services.innerText = translations.ar.other_services
+            best.innerText = translations.ar.best
+            steps.innerText = translations.ar.steps
+
+            stp1.innerText = translations.ar.signup
+            stp2.innerText = translations.ar.stp2
+            stp3.innerText = translations.ar.stp3
+            stp4.innerText = translations.ar.stp4
+
+            stp11.innerText = translations.ar.stp11
+            stp22.innerText = translations.ar.stp22
+            stp33.innerText = translations.ar.stp33
+            stp44.innerText = translations.ar.stp44
+
+            signup11.innerText = translations.ar.signup
+            signin11.innerText = translations.ar.signin
+
+            why_us.innerText = translations.ar.why_us
+
+            why1.innerText = translations.ar.why1
+            why2.innerText = translations.ar.why2
+            why3.innerText = translations.ar.why3
+            why4.innerText = translations.ar.why4
+
+            why11.innerText = translations.ar.why11
+            why22.innerText = translations.ar.why22
+            why33.innerText = translations.ar.why33
+            why44.innerText = translations.ar.why44
+
+            tes1.innerText = translations.ar.tes1
+            tes2.innerText = translations.ar.tes2
+            tes3.innerText = translations.ar.tes3
+            tes4.innerText = translations.ar.tes4
+
+            tes11.innerText = translations.ar.tes11
+            tes22.innerText = translations.ar.tes22
+            tes33.innerText = translations.ar.tes33
+            tes44.innerText = translations.ar.tes44
+
+            payments.innerText = translations.ar.payments
+
+            signup_p.innerText = translations.ar.signup
+
+            contact_h2.innerText = translations.ar.contact_h2
+            contact_p.innerText = translations.ar.contact_p
+
+            signup_re.innerText = translations.ar.signup
+            signin_re.innerText = translations.ar.signin
+
+            c_r.innerText = translations.ar.c_r
+
+            rev1.innerText = translations.ar.rev1
+            rev2.innerText = translations.ar.rev2
+            rev3.innerText = translations.ar.rev3
+            
+            
+        }else if(language == "en"){
+            hero_title.innerText = translations.en.hero_title;
+            hero_para.innerText = translations.en.hero_paragraph;
+            signup_hero.innerText = translations.en.signup;
+            signin_hero.innerText = translations.en.signin;
+            nav_signup_mobile.innerText = translations.en.signup
+            nav_signin_mobile.innerText = translations.en.signin
+            nav_signup_desktop.innerText = translations.en.signup
+            nav_signin_desktop.innerText = translations.en.signup
+            services.innerText = translations.en.services
+            contact.innerText = translations.en.contact
+            instagram.innerText = translations.en.instagram
+            facebook.innerText = translations.en.facebook
+            tiktok.innerText = translations.en.tiktok
+            youtube.innerText = translations.en.youtube
+            twitter.innerText = translations.en.twitter
+            other_services.innerText = translations.en.other_services
+            best.innerText = translations.en.best
+            steps.innerText = translations.en.steps
+
+            stp1.innerText = translations.en.signup
+            stp2.innerText = translations.en.stp2
+            stp3.innerText = translations.en.stp3
+            stp4.innerText = translations.en.stp4
+
+            stp11.innerText = translations.en.stp11
+            stp22.innerText = translations.en.stp22
+            stp33.innerText = translations.en.stp33
+            stp44.innerText = translations.en.stp44
+
+            signup11.innerText = translations.en.signup
+            signin11.innerText = translations.en.signin
+
+            why_us.innerText = translations.en.why_us
+
+            why1.innerText = translations.en.why1
+            why2.innerText = translations.en.why2
+            why3.innerText = translations.en.why3
+            why4.innerText = translations.en.why4
+
+            why11.innerText = translations.en.why11
+            why22.innerText = translations.en.why22
+            why33.innerText = translations.en.why33
+            why44.innerText = translations.en.why44
+
+            tes1.innerText = translations.en.tes1
+            tes2.innerText = translations.en.tes2
+            tes3.innerText = translations.en.tes3
+            tes4.innerText = translations.en.tes4
+
+            tes11.innerText = translations.en.tes11
+            tes22.innerText = translations.en.tes22
+            tes33.innerText = translations.en.tes33
+            tes44.innerText = translations.en.tes44
+
+            payments.innerText = translations.en.payments
+
+            signup_p.innerText = translations.en.signup
+
+            contact_h2.innerText = translations.en.contact_h2
+            contact_p.innerText = translations.en.contact_p
+
+            signup_re.innerText = translations.en.signup
+            signup_re.innerText = translations.en.signin
+
+            c_r.innerText = translations.en.c_r
+
+            rev1.innerText = translations.en.rev1
+            rev2.innerText = translations.en.rev2
+            rev3.innerText = translations.en.rev3
+            
+        }
+     }
+
+
+    </script>
+  </body>
+</html>
